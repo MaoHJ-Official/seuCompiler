@@ -117,6 +117,17 @@
   <ItemGroup>
     <None Include="MyRE.l" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DFA.cpp" />
+    <ClCompile Include="lex.cpp" />
+    <ClCompile Include="NFA.cpp" />
+    <ClCompile Include="ourlex.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DFA.h" />
+    <ClInclude Include="graph.h" />
+    <ClInclude Include="NFA.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
