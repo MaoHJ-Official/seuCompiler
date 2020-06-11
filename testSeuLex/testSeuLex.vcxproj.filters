@@ -18,8 +18,5 @@
     <ClCompile Include="..\seuCompiler\out.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="test.c">
-      <Filter>资源文件</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

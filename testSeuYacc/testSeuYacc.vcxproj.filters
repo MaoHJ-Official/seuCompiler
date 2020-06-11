@@ -23,5 +23,8 @@
     <ClCompile Include="..\seuYacc\y.tab.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\seuCompiler\out.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
