@@ -10,6 +10,7 @@
 #include<queue>
 using namespace std;
 
+
 struct Node
 {
 	Node(int fromId, string input, int toId)
@@ -94,4 +95,7 @@ private:
 	int nfaEnd[MAXID];
 	int nfaNum;
 	int dfaNum;
+
+
+
 };
