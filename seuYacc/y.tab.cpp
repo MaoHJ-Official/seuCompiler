@@ -37,24 +37,29 @@ int main(int argc, char* argv[])
 	string para1, para2;
 	ifstream lex_out;
 	vector<string> Lex_OUT;
-	if (argc == 1) {
-		yylex();
-		filename = "result.txt";
-	}
-	else if (argc == 2) {
-		para1 = argv[1];
-	}
-	else if (argc == 3) {
-		para1 = argv[1];
-		para2 = argv[2];
-	}
-	if (argc == 2 && !para1.compare("-l")) {
-		yylex();
-		filename = "result.txt";
-	}
-	else if (argc == 3 && !para2.compare("-f")) {
-		filename = argv[2];
-	}
+
+	yylex();
+	filename = "result.txt";
+
+	//if (argc == 1) {
+	//	yylex();
+	//	filename = "result.txt";
+	//}
+	//else if (argc == 2) {
+	//	para1 = argv[1];
+	//}
+	//else if (argc == 3) {
+	//	para1 = argv[1];
+	//	para2 = argv[2];
+	//}
+	//if (argc == 2 && !para1.compare("-l")) {
+	//	yylex();
+	//	filename = "result.txt";
+	//}
+	//else if (argc == 3 && !para2.compare("-f")) {
+	//	filename = argv[2];
+	//}
+
 	lex_out.open(filename, ios::in);
 	string temp;
 	do {
@@ -62,6 +67,7 @@ int main(int argc, char* argv[])
 		cout << temp << " ";
 		Lex_OUT.push_back(temp);
 	} while (!lex_out.eof());
+	Lex_OUT.pop_back();
 	cout << endl;
 	Lex_OUT.push_back("$");
 	stack<int> stateStack;

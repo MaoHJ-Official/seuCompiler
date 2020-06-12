@@ -139,9 +139,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\seuYacc\y.tab.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\seuCompiler\out.cpp" />
     <ClCompile Include="..\seuYacc\y.tab.cpp" />
   </ItemGroup>

@@ -12,15 +12,15 @@ extern uniProduction uni_production;//所有产生式
 int main(int argc, char* argv[])
 {
 	string thefile;
-	//if (argc == 1) {
-	//	cerr << "无yacc源文件" << endl;
-	//	exit(1);
-	//}
-	//else {
-	//	thefile = argv[1];
-	//}
-	//parsingFile(thefile);
-	parsingFile("yacc.y");
+	if (argc == 1) {
+		cerr << "无yacc源文件" << endl;
+		exit(1);
+	}
+	else {
+		thefile = argv[1];
+	}
+	parsingFile(thefile);
+	//parsingFile("yacc.y");
 	mapFirst();
 	GenLRTable();
 	InitTable();

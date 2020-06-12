@@ -597,7 +597,7 @@ void Lex::outCodeRight()
     err = fopen(&file, LEX_OUT_FILE_NAME, "w");
     */
     cout << "    FILE* infile;" << endl;
-    cout << "    errno_t err = fopen_s(&infile, LEX_OUT_FILE_NAME, \"w\");" << endl;
+    cout << "    errno_t err = fopen_s(&infile, LEX_FILE_NAME, \"r\");" << endl;
     cout << "    while(NULL != fgets(LEX_BUFF, LEX_MAXSIZE_BUFF, infile))" << endl;
     cout << "    {" << endl;
     cout << "        ++LEX_LINE;" << endl;

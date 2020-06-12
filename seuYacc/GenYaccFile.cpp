@@ -97,6 +97,7 @@ void genFile()
 	out << "cout << temp << \" \";" << endl;
 	out << "Lex_OUT.push_back(temp);" << endl;
 	out << "} while (!lex_out.eof());" << endl;
+	out << "Lex_OUT.pop_back();" << endl;
 	out << "cout<<endl;" << endl;
 	out << "Lex_OUT.push_back(\"$\");" << endl;
 	out << "stack<int> stateStack;" << endl;//״̬ջ
